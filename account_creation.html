@@ -1,0 +1,115 @@
+<!--
+    Group Members: Keara Toop, Catherine Perdomo, Alice Alston, Dom Lynch
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Choices</title>
+    <!--Linking our style sheet and JavaScript file-->
+    <link href="account_creation_style.css" rel="stylesheet"/>
+    <script src="account_creation_js.js"></script>
+</head>
+<body>
+    <!--Keara's Code Start-->
+    <!--Code for the header of this interface-->
+    <header>
+        <img src="logo.png" alt="Healthy Choices" id ="headerLogo">
+    </header>
+    <div class="formSet">
+        <form method="get" action="process.php">
+            <h3 id="accountHeading">Enter your information to make an account</h3>
+            <!--This section is for the info needed to make their account: name, email, phone, password-->
+            <fieldset id="initialInfo">
+                <legend>Account Creation</legend>
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" placeholder="First and Last Name" required
+                onclick="chBackcolorName();"><br><br>
+
+                <label for="email">Email Address*</label>
+                <input type="text" id="email" placeholder="example@gmail.com" required
+                onclick="chBackcolorEmail();"><br><br>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="(###) ###-####"><br>
+                <label id="phoneIf">Enter your phone number if you wish to receive text messages from us</label><br><br>
+
+                <label for="pass">Choose a Password*</label>
+                <input type="text" id="pass" placeholder="Password" required onclick="chBackcolorPass();"><br>
+            </fieldset>
+
+            <!--Break to make space between sections-->
+            <br>
+
+            <!--This section is for the customer's personal info needed for recommendations later-->
+            <fieldset id="healthInfo">
+                <legend>Personal Statistics</legend>
+                <label id="statsDisclaimer">This information will be used to give you recommendations for recipes.<br>
+                    The more information you give us, the better our recommendations can be! <br>You will be able to
+                    edit this information in your home page as needed.</label><br><br>
+                <!--None of these are going to be required to make the customer more comfortable-->
+                <label for="height">Height</label>
+                <input type="text" id="height" placeholder="Height (ex: 5'5&quot)"><br><br>
+
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" placeholder="Weight in lbs"><br><br>
+
+                <label for="calories">Daily Caloric Intake</label>
+                <input type="text" id="calories" placeholder="Calories"><br><br>
+
+                <label for="fitness">Daily Fitness Level</label>
+                <input type="range" id="fitness" min="0" max="5" step="1" value="3">
+            </fieldset>
+
+            <!--Break to make space between sections-->
+            <br>
+
+            <!--This section is to show to "business aspect" and let the customer choose which plan they want-->
+            <div>
+                <label id="memberships">Membership Options</label>
+                <!--Use a table to show the differences between the options-->
+                <table id="memTable">
+                    <tr>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                    </tr>
+                    <tr>
+                        <!--List of Info for Basic Plan-->
+                        <td>
+                            <ul>
+                                <li>$5</li>
+                                <li>Access to Recipes</li>
+                            </ul>
+                        </td>
+                        <!--List of Info for Premium Plan-->
+                        <td>
+                            <ul>
+                                <li>$35</li>
+                                <li>Access to Recipes</li>
+                                <li>Create Grocery Lists Based on Recipes</li>
+                                <li>Monthly Snack Box Based on Your Goals</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table><br>
+                <!--Still in the same divider, ask which plan they want-->
+                <label id="selectMembership">Select Which Membership You Want</label><br>
+                <input type="radio" id="radioBasic" name="membership" checked>
+                <label for="radioBasic">Basic</label>
+                <input type="radio" id="radioPremium" name="membership">
+                <label for="radioPremium">Premium</label><br>
+            </div>
+
+            <!--Break to make space between sections-->
+            <br>
+
+            <!--Submit Button for the form-->
+            <div>
+                <input type="submit" value="Submit Account Info">
+             </div>
+        </form>
+    </div>
+    <!--Keara's Code End-->
+</body>
+</html>
