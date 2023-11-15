@@ -1,0 +1,345 @@
+<!--
+    Group Members: Keara Toop, Catherine Perdomo, Alice Alston, Dom Lynch
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Choices</title>
+    <!--Linking our style sheet and JavaScript file-->
+    <link href="account_homepage.css" rel="stylesheet"/>
+    <script src="user_homepage.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Healthy Choices" id="headerLogo">
+        <label id="headLabel">Meal Applications and Nutrition</label>
+        <!--Navigation Code Start-->
+        <div class="header-left">
+            <nav>
+                <ul>
+                    <li><a href="app-info.html">Meal Applications</a></li>
+                    <li><a href="account_creation.html">Making an account</a></li>
+                    <li><a href="dom">User home page</a></li>
+                    <li><a href="alice">Search Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!--Navigation Code End-->
+    </header>
+    <br>
+    <h1 id="greeting">Hello, User</h1>
+    <ol>
+        <li><h3><a href="#head1">Your Weekly Meal Prep</a></h3></li>
+            <ul>
+                <li><h3><a href="#monday">Monday</a></h3></li>
+                <li><h3><a href="#tuesday">Tuesday</a></h3></li>
+                <li><h3><a href="#wednesday">Wednesday</a></h3></li>
+                <li><h3><a href="#thursday">Thursday</a></h3></li>
+                <li><h3><a href="#friday">Friday</a></h3></li>
+            </ul>
+        <li><h3><a href="#head2">Your Caloric Intake</a></h2></li>
+        <li><h3><a href="#head3">Your Protein Intake</a></h3></li>
+        <li><h3><a href="#head4">Some Extra Recipes and Nearby Grocery Stores</a></h3></li>
+        </ol>
+    <br>
+
+    <div class="user">
+        <form>
+        <fieldset>
+            <fieldset id="WeeklyRec">
+                <legend><h1 alt="head1" id="head1">Recommended Meal Prep</h1></legend>
+                <!--Recipe Table-->
+                <table id="WeeklyTable">
+                    <tr>
+                        <th>Days</th>
+                        <th>Meal Recipes</th>
+                    </tr>
+                    <tr>
+                        <td><h3 alt="monday" id="monday">Monday</h3></td>
+                        <td>
+                            <ul>
+                                <li>Breakfast: Vegetable Omelet</li>
+                                <ul id="list2">
+                                    <li>2 eggs</li>
+                                    <li>1 cup (20 grams) of spinach</li>
+                                    <li>1/4 cup (24 grams) of mushrooms</li>
+                                    <li>1/4 cup (23 grams) of broccoli</li>
+                                    <li>1 cup (205 grams) of sautéed sweet potatoes</li>
+                                    <li>1 tablespoon (15 ml) of olive oil</li>
+                                </ul>
+                                <li>Snack: apple with peanut butter</li>
+                                <ul class="list2">
+                                    <li>1 medium apple</li>
+                                    <li>2 tablespoons (32 grams) of peanut butter</li>
+                                </ul>
+                                <li>Lunch: Mediterranean tuna pita pockets</li>
+                                <ul class="list2">
+                                    <li>1 whole-wheat pita</li>
+                                    <li>5 ounces (140 grams) of canned tuna</li>
+                                    <li>chopped red onion and celery</li>
+                                    <li>1/4 avocado</li>
+                                    <li>1 cup (205 grams) of sautéed sweet potatoes</li>
+                                    <li>1 tablespoon (9 grams) of crumbled feta cheese</li>
+                                </ul>
+                                <li>Snack: cheese and grapes</li>
+                                <ul class="list2">
+                                    <li>2 ounces (56 grams) of cheddar cheese</li>
+                                    <li>1 cup (92 grams) of grapes</li>
+                                </ul>
+                                <li>Dinner: salmon with veggies and wild rice</li>
+                                <ul class="list2">
+                                    <li>5 ounces (140 grams) of baked salmon</li>
+                                    <li>2 tablespoons (30 ml) of olive oil</li>
+                                    <li>1/2 cup (82 grams) of cooked wild rice</li>
+                                    <li>1 cup (180 grams) of roasted asparagus</li>
+                                    <li>1 cup (100 grams) of roasted eggplant</li>
+                                </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3 alt="tuesday" id="tuesday">Tuesday</h3></td>
+                        <td>
+                            <ul>
+                                <li>Breakfast: nut butter and banana toast</li>
+                                <ul class="list2">
+                                    <li>2 slices of whole-grain toast</li>
+                                    <li>2 tablespoons (32 grams) of almond butter</li>
+                                    <li>1 sliced banana</li>
+                                    <li>cinnamon to sprinkle on top</li>
+                                </ul>
+                                <ul class="list2">
+                                    <li>2 slices of whole-grain toast</li>
+                                    <li>2 tablespoons (32 grams) of almond butter</li>
+                                    <li>1 sliced banana</li>
+                                    <li>cinnamon to sprinkle on top</li>
+                                </ul>
+                                <li>Snack: power smoothie</li>
+                                <ul class="list2">
+                                    <li>3/4 cup (180 ml) of unsweetened, non-dairy milk</li>
+                                    <li>1 cup (20 grams) of spinach</li>
+                                    <li>1 scoop (42 grams) of plant-based protein powder</li>
+                                    <li>1 cup (123 grams) of frozen blueberries</li>
+                                    <li>1 tablespoon (14 grams) of hemp seeds</li>
+                                </ul>
+                                <li>Lunch: avocado-tuna salad</li>
+                                <ul class="list2">
+                                    <li>1/2 avocado</li>
+                                    <li>5 ounces (140 grams) of canned tuna</li>
+                                    <li>1/2 cup (75 grams) of cherry tomatoes</li>
+                                    <li>2 cups (100 - 140 grams) of mixed greens</li>
+                                </ul>
+                                <li>Lunch: black bean and sweet potato burrito</li>
+                                <ul class="list2">
+                                    <li>1 whole-wheat tortilla</li>
+                                    <li>1/4 cup (41 grams) of cooked brown rice</li>
+                                    <li>1/2 cup (102 grams) of cooked sweet potatoes</li>
+                                    <li>1/4 cup (50 grams) of black beans</li>
+                                    <li>2 tablespoons (30 grams) of salsa</li>
+                                </ul>
+                                <li>Snack: vegetables and hummus</li>
+                                <ul class="list2">
+                                    <li>fresh carrot and celery sticks</li>
+                                    <li>2 tablespoons (30 grams) of hummus</li>
+                                    <li>1/2 whole-wheat pita bread</li>
+                                </ul>
+                                <li>Dinner: chicken and broccoli stir-fry</li>
+                                <ul class="list2">
+                                    <li>5 ounces (140 grams) of chicken</li>
+                                    <li>2 cups (176 grams) of broccoli</li>
+                                    <li>1/2 cup (82 grams) of cooked brown rice</li>
+                                    <li>fresh garlic and ginger</li>
+                                    <li>1 tablespoon (15 ml) of soy sauce</li>
+                                </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3 alt="wednesday" id="wednesday">Wednesday</h3></td>
+                        <td>
+                            <ul>
+                                <li>Breakfast: berry yogurt parfait</li>
+                                <ul class="list2">
+                                    <li>7 ounces (200 grams) of plain Greek yogurt</li>
+                                    <li>1/2 cup (74 grams) of fresh blueberries</li>
+                                    <li>1/2 cup (76 grams) of sliced strawberries</li>
+                                    <li>1/4 cup (30 grams) of granola</li>
+                                </ul>
+                                <li>Snack: banana and almond butter</li>
+                                <ul class="list2">
+                                    <li>1 banana</li>
+                                    <li>1 1/2 tablespoons (24 grams) of almond butter</li>
+                                </ul>
+                                <li>Lunch: peanut noodles with tofu and peas</li>
+                                <ul class="list2">
+                                    <li>3/4 cup (132 grams) of cooked rice noodles</li>
+                                    <li>5 ounces (141 grams) of tofu</li>
+                                    <li>1/2 cup (125 grams) of peas</li>
+                                    <li>1 tablespoon (16 grams) of creamy peanut butter</li>
+                                    <li>2 teaspoons (10 grams) of tamari or soy sauce</li>
+                                    <li>1/2 teaspoon (2 grams) of Sriracha</li>
+                                    <li>2 teaspoons (14 grams) of honey</li>
+                                    <li>juice of 1/2 lime</li>
+                                </ul>
+                                <li>Snack: protein bar</li>
+                                <ul class="list2">
+                                    <li>Look for bars containing approximately 200-250 calories with less than 12 grams of sugar and at least 5 grams of fiber.</li>
+                                </ul>
+                                <li>Dinner: fish tacos</li>
+                                <ul class="list2">
+                                    <li>3 corn tortillas</li>
+                                    <li>6 ounces (170 grams) of grilled cod</li>
+                                    <li>1/2 avocado</li>
+                                    <li>2 tablespoons (34 grams) of pico de gallo</li>
+                                </ul>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3 alt="thursday" id="thursday">Thursday</h3></td>
+                        <td>
+                            <ul>
+                                <li>Breakfast: avocado toast with egg</li>
+                                <ul class="list2">
+                                    <li>1/2 avocado</li>
+                                    <li>2 slices of whole-wheat toast</li>
+                                    <li>1 tablespoon (15 ml) of olive oil</li>
+                                    <li>1 egg</li>
+                                </ul>
+                                <li>Snack: Greek yogurt with strawberries</li>
+                                <ul class="list2">
+                                    <li>7 ounces (200 grams) of plain Greek yogurt</li>
+                                    <li>3/4 cup (125 grams) of sliced strawberries</li>
+                                </ul>
+                                <li>Lunch: quinoa with mixed vegetables and grilled chicken</li>
+                                <ul class="list2">
+                                    <li>1/2 cup (93 grams) of cooked quinoa</li>
+                                    <li>5 ounces (142 grams) of grilled chicken</li>
+                                    <li>1 tablespoon (15 ml) of olive oil</li>
+                                    <li>1 cup (180 grams) of mixed, non-starchy vegetables</li>
+                                </ul>
+                                <li>Snack: dark chocolate and almonds</li>
+                                <ul class="list2">
+                                    <li>2 squares (21 grams) of dark chocolate</li>
+                                    <li>15-20 almonds</li>
+                                </ul>
+                                <li>Dinner: vegetarian chili</li>
+                                <ul class="list2">
+                                    <li>1/2 cup (121 grams) of canned, crushed tomatoes</li>
+                                    <li>1/2 cup (130 grams) of kidney beans</li>
+                                    <li>1/2 cup (103 grams) of butternut squash</li>
+                                    <li>1/2 cup (75 grams) of cooked sweet corn</li>
+                                    <li>1/4 cup (28 grams) of diced white onions</li>
+                                    <li>1/4 of a jalapeño pepper</li>
+                                </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3 alt="friday" id="friday">Friday</h3></td>
+                        <td>
+                            <ul>
+                                <li>Breakfast: oatmeal with seeds and dried fruit</li>
+                                <ul class="list2">
+                                    <li>1/2 cups (80 grams) of steel-cut oats</li>
+                                    <li>1 tablespoon (14 grams) of hemp seeds</li>
+                                    <li>1 tablespoon (12 grams) of flax seeds</li>
+                                    <li>2 tablespoons (20 grams) of dried cherries</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Snack: bell peppers and carrots with guacamole</li>
+                                <ul class="list2">
+                                    <li>1/2 bell pepper, cut into strips</li>
+                                    <li>1 cup of carrot sticks</li>
+                                    <li>4 tablespoons (60 grams) of guacamole</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Lunch: grilled vegetable and mozzarella wrap</li>
+                                <ul class="list2">
+                                    <li>1 whole-wheat tortilla</li>
+                                    <li>1/2 cup (60 grams) of grilled red peppers</li>
+                                    <li>5 slices (42 grams) of grilled zucchini</li>
+                                    <li>3 ounces (84 grams) of fresh mozzarella</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Snack: chia pudding with banana</li>
+                                <ul class="list2">
+                                    <li>5 ounces (170 grams) of chia pudding</li>
+                                    <li>1/2 of a sliced banana</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Dinner: pasta with pesto, peas, and shrimp</li>
+                                <ul class="list2">
+                                    <li>2 tablespoons (30 grams) of pesto</li>
+                                    <li>1/2 cup (42 grams) of whole-wheat or brown-rice penne</li>
+                                    <li>6 ounces (170 grams) of shrimp</li>
+                                    <li>1/2 cup (80 grams) of peas</li>
+                                    <li>1 tablespoon (5 grams) of grated Parmesan cheese</li>
+                                </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                </table><br>
+            </fieldset>
+
+            <!--Calls on Functions-->
+            <fieldset id="CalIntake">
+                <legend><h1 alt="head2" id="head2">Caloric Intake</h1></legend>
+                <p>Daily Caloric intake Goal: 2000</p>
+                <label for="cals">Enter the amount of calories you have eaten today?</label>
+                <input type="text" id="calories" placeholder="Caloric Intake" value="">
+                <input type="button" value="Submit" onclick="calculateC()" />
+                <div id="alertC" style="color: red"></div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset id="PIntake">
+                <legend><h1 alt="head3" id="head3">Protein Intake</h1></legend>
+                <p>Daily Protein intake Goal: 150g</p>
+                <label for="cals">Enter the amount of protein you have eaten today?</label>
+                <input type="text" id="proteins" placeholder="Protein Intake" value="">
+                <input type="button" value="Submit" onclick="calculateP()" />
+                <div id="alertP" style="color: red"></div>
+            </fieldset>
+                <br>
+                <br>
+            <label id="recs"><h1 alt="head4" id="head4">Recommendations</h1></label>
+        
+        <table id="recTable">
+            <tr>
+                <th>Recipes</th>
+                <th>Grocery Stores Near You</th>
+            </tr>
+            <tr>
+                
+                <td>
+                    <ul>
+                        <li><a href="https://www.eatingwell.com/recipe/259822/chickpea-quinoa-buddha-bowl/">Chickpea & Quinoa Grain Bowl</a></li>
+                        <li><a href="https://www.eatingwell.com/recipe/279262/mahi-mahi-fish-tacos/">Mahi-Mahi Fish Tacos</a></li>
+                        <li><a href="https://www.eatingwell.com/recipe/259816/mixed-greens-with-lentils-sliced-apple/">Mixed Greens with Lentils & Sliced Apple</a></li>
+                        <li><a href="https://www.eatingwell.com/recipe/260717/stuffed-sweet-potato-with-hummus-dressing/">Stuffed Sweet Potato with Hummus Dressing</a></li>
+
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Whole Foods</li>
+                        <li>Trader Joes</li>
+                        <li>Safeway</li>
+                        <li>Streets Market</li>
+                    </ul>
+                </td>
+            </tr>
+        </table><br>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>

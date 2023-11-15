@@ -1,0 +1,98 @@
+/* 
+    Group Members: Keara Toop, Catherine Perdomo, Alice Alston, Dom Lynch
+*/
+
+    header {
+        background-color: #87BA78;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .header-left {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    #headLabel {
+        color: white;
+        font-size: 2em;
+    }
+
+    /* Navigation list styles */
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    /* Style for the size of the logo*/
+    #headerLogo{
+        height: 75px; 
+        width: auto;
+        padding-left: 25px;
+    }
+
+    #greeting{
+        text-align: center;
+    }
+
+    fieldset {
+        border: 0;
+    }
+
+
+    /* Set the form to the center of the page*/
+    .user{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    /* Set the color of the required fields to red */
+    #name, #email, #pass{
+        background-color: #E1453D;
+        opacity: 75%;
+    }
+    /* Change placeholder text to white so it can be seen against 
+    the red background */
+    #name::placeholder, #email::placeholder, #pass::placeholder {
+        color: white;
+    }
+
+    /* Separate so the list elements won't be centered*/
+    td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        vertical-align: top;
+        padding: 0.5em;
+    }
+    /* Style to add the lines to the table*/
+    table, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 0.5em;
+    }
+    /* Add a background color to the header */
+    th{
+        background-color: #87BA78;
+    }
+    /* Change this text to italics*/
+    #phoneIf{
+        font-style: italic;
+    }
+/* CSS for Keara's Page End */
