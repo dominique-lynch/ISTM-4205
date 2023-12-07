@@ -1,5 +1,6 @@
 <!--
-    Group Members: Keara Toop, Catherine Perdomo, Alice Alston, Dom Lynch
+    Group Members: Keara Toop, Catherine Perdomo, Alice Alston, Dominique Lynch
+    Date: November 6, 2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +30,9 @@
     <!--Navigation Code End-->
     </header>
     <br>
+    <!--Greets user-->
     <h1 id="greeting">Hello, User</h1>
+    <!--Displays a list of anchor links to significant sections of the homepage-->
     <ol>
         <li><h3><a href="#head1">Your Weekly Meal Prep</a></h3></li>
             <ul>
@@ -50,7 +53,7 @@
         <fieldset>
             <fieldset id="WeeklyRec">
                 <legend><h1 alt="head1" id="head1">Recommended Meal Prep</h1></legend>
-                <!--Recipe Table-->
+                <!--Table that displays 5 days of recipes that meet the caloric goal and protein goal of the user-->
                 <table id="WeeklyTable">
                     <tr>
                         <th>Days</th>
@@ -289,38 +292,43 @@
                 </table><br>
             </fieldset>
 
-            <!--Calls on Functions-->
+            <!--Section that displays caloric intake-->
             <fieldset id="CalIntake">
                 <legend><h1 alt="head2" id="head2">Caloric Intake</h1></legend>
                 <p>Daily Caloric intake Goal: 2000</p>
                 <label for="cals">Enter the amount of calories you have eaten today?</label>
                 <input type="text" id="calories" placeholder="Caloric Intake" value="">
+                <!--Calls on function when user presses the submit button-->
                 <input type="button" value="Submit" onclick="calculateC()" />
+                <!--Alerts the user of how many more calories is left below the submission button in a red font-->
                 <div id="alertC" style="color: red"></div>
             </fieldset>
             <br>
             <br>
+            <!--Section that displays protein intake-->
             <fieldset id="PIntake">
                 <legend><h1 alt="head3" id="head3">Protein Intake</h1></legend>
                 <p>Daily Protein intake Goal: 150g</p>
                 <label for="cals">Enter the amount of protein you have eaten today?</label>
                 <input type="text" id="proteins" placeholder="Protein Intake" value="">
+                <!--Calls on function when user presses the submit button-->
                 <input type="button" value="Submit" onclick="calculateP()" />
+                <!--Alerts the user of how many grams of protein is left below the submission button in a red font-->
                 <div id="alertP" style="color: red"></div>
             </fieldset>
-                <br>
-                <br>
+            <br>
+            <br>
             <label id="recs"><h1 alt="head4" id="head4">Recommendations</h1></label>
-        
+        <!--Table that displays extra recipes and nearbly grocery stores-->    
         <table id="recTable">
             <tr>
                 <th>Recipes</th>
                 <th>Grocery Stores Near You</th>
             </tr>
             <tr>
-                
                 <td>
                     <ul>
+                        <!--Table that displays extra recipes and nearbly grocery stores-->  
                         <li><a href="https://www.eatingwell.com/recipe/259822/chickpea-quinoa-buddha-bowl/">Chickpea & Quinoa Grain Bowl</a></li>
                         <li><a href="https://www.eatingwell.com/recipe/279262/mahi-mahi-fish-tacos/">Mahi-Mahi Fish Tacos</a></li>
                         <li><a href="https://www.eatingwell.com/recipe/259816/mixed-greens-with-lentils-sliced-apple/">Mixed Greens with Lentils & Sliced Apple</a></li>
